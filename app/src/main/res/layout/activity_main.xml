@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/trending_news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trending News"
+        android:textSize="20sp"
+        android:layout_margin="16dp"
+        android:textStyle="bold"/>
+    <!-- Conteneur horizontal pour les boutons de catégories, ajouté dans un HorizontalScrollView -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/categoryLayout"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <!-- Dynamically created category buttons will go here -->
+
+</LinearLayout>
+    </HorizontalScrollView>
+
+<androidx.recyclerview.widget.RecyclerView
+android:id="@+id/recyclerView"
+android:layout_width="match_parent"
+android:layout_height="match_parent" />
+    </LinearLayout>

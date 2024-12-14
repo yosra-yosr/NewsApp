@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- État sélectionné : couleur de fond modifiée -->
+    <item android:state_selected="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#aab7b7" /> <!-- Couleur de fond pour l'état sélectionné -->
+            <corners android:radius="20dp" /> <!-- Coins arrondis -->
+            <!-- Vous pouvez ajouter une ombre via une drawable si nécessaire -->
+        </shape>
+    </item>
+
+    <!-- État normal : bordure et fond transparent -->
+    <item android:state_enabled="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@android:color/white" /> <!-- Fond blanc pour l'état normal -->
+            <corners android:radius="20dp" /> <!-- Coins arrondis -->
+            <stroke android:color="#aab7b7" android:width="1dp" /> <!-- Bordure bleu-gris -->
+        </shape>
+    </item>
+
+    <!-- État appuyé : fond gris clair et bordure légèrement plus foncée -->
+    <item android:state_pressed="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#aab7b7" /> <!-- Fond gris clair -->
+            <corners android:radius="20dp" /> <!-- Coins arrondis -->
+            <stroke android:color="#aab7b7" android:width="1dp" /> <!-- Bordure bleu-gris -->
+        </shape>
+    </item>
+
+    <!-- État inactif (désactivé) : fond gris très clair et bordure plus claire -->
+    <item android:state_enabled="false">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#d4d8dd" /> <!-- Fond gris très clair -->
+            <corners android:radius="20dp" /> <!-- Coins arrondis -->
+            <stroke android:color="#c0c8ca" android:width="1dp" /> <!-- Bordure gris clair -->
+        </shape>
+    </item>
+</selector>

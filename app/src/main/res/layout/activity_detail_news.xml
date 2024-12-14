@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- CardView pour afficher l'image avec une ombre -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp">
+
+            <ImageView
+                android:id="@+id/detailImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Titre de l'actualité -->
+        <TextView
+            android:id="@+id/detailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#1a2d42"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"/>
+
+        <!-- Description de l'actualité -->
+        <TextView
+            android:id="@+id/detailContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#4A4A4A"
+            android:layout_marginBottom="20dp"
+            android:lineSpacingExtra="6dp" />
+
+        <!-- Bouton de partage avec un style moderne -->
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Partager"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:background="@drawable/share_button_background"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:elevation="6dp"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp" />
+
+    </LinearLayout>
+</ScrollView>
